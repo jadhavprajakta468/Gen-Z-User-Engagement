@@ -1,5 +1,5 @@
 # Gen-Z-User-Engagement
-Problem Statement
+#Problem Statement
 
 The challenge is to build engagement constructs on a platform that resonates with younger audiences, focusing on fashion to drive habitual use and virality.
 
@@ -32,8 +32,6 @@ Backend: Python with Flask framework
 
 Benefits
 
-Enhanced User Experience: Seamless shopping experience with AI-driven assistance and interactive features.
-
-Increased Engagement: Through gamification and AR try-on, keeping users returning to the app.
-
-Virality: Encouraging community interaction and sharing through challenges and trends.
+1)Enhanced User Experience: Seamless shopping experience with AI-driven assistance and interactive features.
+2)Increased Engagement: Through gamification and AR try-on, keeping users returning to the app.
+3)Virality: Encouraging community interaction and sharing through challenges and trends.
