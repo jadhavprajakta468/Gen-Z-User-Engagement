@@ -27,10 +27,13 @@ Users can mix and match items to create outfits and visualize how they look toge
 Technologies Used
 
 Frontend: HTML, CSS, JavaScript
+
 Backend: Python with Flask framework
 
 Benefits
 
 Enhanced User Experience: Seamless shopping experience with AI-driven assistance and interactive features.
+
 Increased Engagement: Through gamification and AR try-on, keeping users returning to the app.
+
 Virality: Encouraging community interaction and sharing through challenges and trends.
