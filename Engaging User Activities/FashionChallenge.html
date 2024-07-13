@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fashion Challenges - Home</title>
+<style>
+/* Basic styling for layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light background color */
+}
+
+.header {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for header */
+}
+
+.header img {
+    max-width: 100%; /* Adjusted to 100% of the container width */
+    height: auto;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.navbar {
+    text-align: center;
+    background-color: #fff; /* White background for navbar */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for navbar */
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #4CAF50; /* Green color on hover */
+}
+
+.main-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.sidebar {
+    background-color: #fff; /* White background for sidebar */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for sidebar */
+}
+
+.challenge {
+    border: 1px solid #e0e0e0; /* Light gray border */
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff; /* White background for challenge */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for challenge */
+}
+
+.challenge h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.challenge p {
+    margin: 8px 0;
+    color: #666;
+}
+
+.upcoming-challenges .challenge {
+    margin-bottom: 10px;
+}
+
+.filters {
+    background-color: #fff; /* White background for filters */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for filters */
+}
+
+.filters h2 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.filters ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.filters ul li {
+    margin-bottom: 8px;
+}
+
+.filters ul li a {
+    text-decoration: none;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.filters ul li a:hover {
+    color: #4CAF50; /* Green color on hover */
+}
+
+.participate-btn, .view-rules-btn {
+    background-color: #4CAF50; /* Green button background */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.participate-btn:hover, .view-rules-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.rules-section {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f2f2f2; /* Light gray background */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for rules section */
+}
+
+.footer {
+    background-color: #f2f2f2; /* Light gray background for footer */
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for footer */
+}
+
+.footer p {
+    margin: 0;
+    color: #666;
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <img src="{{ url_for('static', filename='fashion.png') }}"  alt="Fashion Challenges">
+    </div>
+</header>
+
+<nav class="navbar">
+    <div class="container">
+        <a href="#" target="_blank">Home</a>
+        <a href="profile.html" target="_blank">My Profile</a>
+        <a href="admin.html" target="_blank">Admin Dashboard</a>
+    </div>
+</nav>
+
+<main class="container">
+
+<!-- Home Page / Challenge Overview -->
+<section class="main-section">
+    <div class="challenges">
+        <div class="challenge">
+            <h2>Current Challenge</h2>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Deadline: June 30, 2024</p>
+        </div>
+
+        <div class="challenge upcoming-challenges">
+            <h2>Upcoming Challenges</h2>
+            <div class="challenge">
+                <p>Theme: Summer Vibes</p>
+                <p>Start Date: July 15, 2024</p>
+            </div>
+            <div class="challenge">
+                <p>Theme: Retro Fashion</p>
+                <p>Start Date: August 1, 2024</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="filters">
+            <h2>Filters</h2>
+            <ul>
+                <li><a href="#">By Theme</a></li>
+                <li><a href="#">By Popularity</a></li>
+                <li><a href="#">By Date</a></li>
+            </ul>
+            <a href="participate.html"><button class="participate-btn">Participate</button></a>
+            <button class="view-rules-btn">View Rules</button>
+            <div class="rules-section" id="rules-section">
+                <h2>Rules</h2>
+                <p>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Fashion Challenges. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+// JavaScript for toggling rules section visibility
+document.addEventListener('DOMContentLoaded', function() {
+    const viewRulesBtn = document.querySelector('.view-rules-btn');
+    const rulesSection = document.getElementById('rules-section');
+
+    viewRulesBtn.addEventListener('click', function() {
+        // Toggle visibility of rules section
+        rulesSection.style.display = rulesSection.style.display === 'none' ? 'block' : 'none';
+    });
+});
+</script>
+
+</body>
+</html>

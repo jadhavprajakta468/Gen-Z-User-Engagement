@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Trend Prediction Game</title>
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; background-color: #f4f4f4; margin: 20px;">
+
+    <header style="text-align: center; margin-bottom: 20px;">
+        <h1>Fashion Trend Prediction Game</h1>
+    </header>
+
+    <main style="display: flex; flex-wrap: wrap; gap: 20px;">
+
+        <section style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); flex: 1 1 300px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 10px;">Prediction Game</h2>
+            <p>Predict upcoming trends in fashion and earn rewards!</p>
+             <a href="prediction.html">
+                <img src="{{ url_for('static', filename='Predict.png') }}"  alt="Prediction Game" style="max-width: 100%; border-radius: 4px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); margin-bottom: 15px;">
+            </a>
+        </section>
+
+        <section style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); flex: 1 1 300px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 10px;">Fashion Challenges</h2>
+            <p>Create outfits based on themes and win rewards!</p>
+            <a href="FashionChallenge.html">
+                <img src="{{ url_for('static', filename='fashion1.png') }}"  alt="Fashion Challenges" style="max-width: 100%; border-radius: 4px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); margin-bottom: 15px;">
+            </a>
+        </section>
+
+        <section style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); flex: 1 1 300px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 10px;">Trend Spotting Quests</h2>
+            <p>Find hidden trends and earn rewards!</p>
+            <div class="quest" style="margin-bottom: 15px; padding: 10px; background-color: #f9f9f9; border: 1px solid #ccc; border-radius: 4px; text-align: center;">
+                <p style="margin-bottom: 15px;">Quest 1</p>
+                <img src="{{ url_for('static', filename='Quest1.png') }}"  alt="Quest 1" style="max-width: 100%; border-radius: 4px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); margin-bottom: 15px;">
+                <a href="Quest1.html">
+                <button style="padding: 8px 16px; background-color: #28a745; color: #fff; border: none; border-radius: 4px; cursor: pointer; transition: background-color 0.3s ease;">Start Quest</button>
+            </a>
+            </div>
+            <div class="quest" style="margin-bottom: 15px; padding: 10px; background-color: #f9f9f9; border: 1px solid #ccc; border-radius: 4px; text-align: center;">
+                <p style="margin-bottom: 15px;">Quest 2</p>
+                 <img src="{{ url_for('static', filename='Quest2.png') }}"  alt="Quest 2" style="max-width: 100%; border-radius: 4px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); margin-bottom: 15px;">
+                <a href="Quest2.html">
+                <button style="padding: 8px 16px; background-color: #28a745; color: #fff; border: none; border-radius: 4px; cursor: pointer; transition: background-color 0.3s ease;">Start Quest</button>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer style="text-align: center; margin-top: 20px; padding: 10px 0; background-color: #333; color: #fff;">
+        <p>&copy; 2024 Fashion Trend Game. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

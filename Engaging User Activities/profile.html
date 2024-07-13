@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prediction App - My Profile</title>
+<style>
+/* Basic styling for layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light background color */
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #4CAF50; /* Green border */
+}
+
+.user-info {
+    font-weight: bold;
+    color: #333;
+}
+
+.user-section {
+    margin-top: 20px;
+}
+
+.user-item {
+    background-color: #f9f9f9; /* Light gray background for challenges */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.user-item.challenges {
+    background-color: #fff; /* White background for submissions */
+}
+
+.user-item h3 {
+    color: #4CAF50; /* Green heading */
+    margin-bottom: 10px;
+}
+
+.user-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.user-item ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.user-item ul li img {
+    width: 80px; /* Larger image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.vote-badge {
+    background-color: #4CAF50; /* Green badge background */
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-left: auto;
+}
+
+.vote-badge::before {
+    content: "Votes: ";
+    font-weight: bold;
+}
+
+/* Additional styling for image submissions */
+.submission-img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+</style>
+</head>
+<body>
+<main class="container">
+
+<section>
+    <div class="user-profile">
+        <img src="{{ url_for('static', filename='user.png') }}" alt="User Profile Picture"> <!-- Updated user profile picture -->
+        <div class="user-info">
+            <h2>Prajakta123</h2>
+            <p>Joined: January 1, 2023</p>
+        </div>
+    </div>
+
+    <div class="user-section">
+        <div class="user-item challenges">
+            <h3>My Challenges</h3>
+            <ul>
+                <li>Winter challenge 1 - Ongoing</li>
+                <li>Winter challenge 2 - Completed</li>
+            </ul>
+        </div>
+
+        <div class="user-item submissions">
+            <h3>My Submissions</h3>
+            <ul>
+                <li>
+                    <img src="{{ url_for('static', filename='outfit1.jpg') }}" alt="Submitted Outfit"> <!-- Updated outfit image -->
+                    Winter challenge 1 <span class="vote-badge">25</span>
+                </li>
+                <li>
+                    <img src="{{ url_for('static', filename='outfit2.jpg') }}" alt="Submitted Outfit"> <!-- Updated outfit image -->
+                    Winter challenge 2 <span class="vote-badge">15</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+</main>
+
+</body>
+</html>

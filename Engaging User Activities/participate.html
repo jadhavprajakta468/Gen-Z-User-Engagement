@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fashion Challenges - Participate</title>
+<style>
+/* Basic styling for layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light background color */
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.form-section {
+    background-color: #fff; /* White background for form section */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for form section */
+}
+
+.form-section h2 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.form-section label {
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-section input[type="submit"] {
+    background-color: #4CAF50; /* Green button background */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.form-section input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+</style>
+</head>
+<body>
+
+<main class="container">
+
+<section class="form-section">
+    <h2>Participate in the Challenge</h2>
+    <form action="/participate.html" method="post"> <!-- Updated action to "/participate.html" to submit to correct route -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="outfit-description">Outfit Description:</label>
+        <textarea id="outfit-description" name="outfit-description" rows="4" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+</main>
+</body>
+</html>
