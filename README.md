@@ -22,7 +22,7 @@ We have implemented several features aimed at enhancing user engagement and inte
 
 ### Technologies Used
 - **Frontend**: HTML, CSS, JavaScript
-- **Backend**: Python with Flask framework
+- **Backend**: Python with Flask framework and Database-MySQL
 
 ### Benefits
 - **Enhanced User Experience**: Seamless shopping experience with AI-driven assistance and interactive features.
