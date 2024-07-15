@@ -62,7 +62,11 @@ We have implemented several features aimed at enhancing user engagement and inte
 
 ### Website view-Chatbot:
 
-![Screenshot 2024-07-15 180053](https://github.com/user-attachments/assets/87470799-bfcd-4a6d-8b39-0e45193ce1ba)
+![chatbot](https://github.com/user-attachments/assets/8176b6e8-fdf8-4409-b43a-b339d4478463)
+
+### Website AR Virtual try-on:
+
+![Virtual try-on](https://github.com/user-attachments/assets/0cc62e01-c8bf-4b8b-a8d2-bd26f7d6324c)
 
 
 
