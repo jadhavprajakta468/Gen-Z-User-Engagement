@@ -33,20 +33,30 @@ We have implemented several features aimed at enhancing user engagement and inte
 ### Website view-Engaging user activities:
 1)gamification.html:
 ![Screenshot 2024-07-15 173053](https://github.com/user-attachments/assets/f040415b-3c08-417d-8bdf-49dbf93966a9)
+
 2)FashionChallenge.html:
 ![Screenshot 2024-07-15 173151](https://github.com/user-attachments/assets/d2ea7aea-595f-4f07-b0d3-10a68e5bdb86)
+
 3)participate.html:
 ![Screenshot 2024-07-15 173226](https://github.com/user-attachments/assets/3d8eec1e-8ccb-4171-ab3e-cf0a7b692bef)
+
 4)thankyou.html:
 ![Screenshot 2024-07-15 173251](https://github.com/user-attachments/assets/1b21216b-e1b7-441a-860d-fd89693abc5d)
+
 5)profile.html:
 ![Screenshot 2024-07-15 173309](https://github.com/user-attachments/assets/387a262e-4b5a-4363-9e42-0ea069ba113f)
+
 6)admin.html:
 ![Screenshot 2024-07-15 173349](https://github.com/user-attachments/assets/dc34e66f-c3ed-4fd5-927a-226756f3f1ae)
 ![Screenshot 2024-07-15 173419](https://github.com/user-attachments/assets/a07748e8-dba9-4f04-9a21-6f9eeff83d36)
+
 7)Database:
-![Screenshot 2024-07-15 175231](https://github.com/user-attachments/assets/9250fa61-e717-47b3-9d1c-98285469791b)
-![Screenshot 2024-07-15 175256](https://github.com/user-attachments/assets/d67a8e73-ab66-40bd-bbdd-487fd61c3a88)
+![Screenshot 2024-07-15 175645](https://github.com/user-attachments/assets/6be2f670-33eb-4c88-bbbd-c395c3348529)
+
+### Website view-Chatbot:
+![Screenshot 2024-07-15 180053](https://github.com/user-attachments/assets/87470799-bfcd-4a6d-8b39-0e45193ce1ba)
+
+
 
 
 
